@@ -1,0 +1,10 @@
+# Build outputs & release binaries (upload to GitHub Releases instead)
+stage/
+bin/
+obj/
+*.exe
+*.zip
+*.pdb
+node_modules/
+.DS_Store
+Thumbs.db

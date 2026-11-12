@@ -1,0 +1,39 @@
+[
+  {
+    "id": "academic-stem",
+    "name": "Academic STEM & Citation Lock",
+    "license": "Apache-2.0",
+    "rules": [
+      "Preserve [^n] footnotes",
+      "Exact DOI & LaTeX invariance",
+      "3-Tier Glossary enforcement"
+    ]
+  },
+  {
+    "id": "legal-contract",
+    "name": "Cross-Border Legal Contract",
+    "license": "Apache-2.0",
+    "rules": [
+      "Strict modal verb mapping (shall/may/must)",
+      "Defined Capitalized Terms lock"
+    ]
+  },
+  {
+    "id": "historical-monograph",
+    "name": "Historical Monograph Guard",
+    "license": "Apache-2.0",
+    "rules": [
+      "Anti-anachronism terminology filter",
+      "Archival fond/opis/delo preservation"
+    ]
+  },
+  {
+    "id": "literary-publishing",
+    "name": "Literary & Publishing Register",
+    "license": "Apache-2.0",
+    "rules": [
+      "Character speech voice & pronoun continuity",
+      "Cross-chapter entity synopsis"
+    ]
+  }
+]

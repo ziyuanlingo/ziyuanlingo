@@ -1,0 +1,38 @@
+[
+  {
+    "en": "variational inference",
+    "zh": "变分推断",
+    "ja": "変分推論",
+    "domain": "academic-stem"
+  },
+  {
+    "en": "stochastic gradient Langevin dynamics",
+    "zh": "随机梯度朗之万动力学",
+    "ja": "確率的勾配ランジュバン動力学",
+    "domain": "academic-stem"
+  },
+  {
+    "en": "representation collapse",
+    "zh": "表征坍缩",
+    "ja": "表現崩壊",
+    "domain": "academic-stem"
+  },
+  {
+    "en": "cumulative liability",
+    "zh": "累计赔偿责任",
+    "ja": "累積賠償責任",
+    "domain": "legal-contract"
+  },
+  {
+    "en": "Derivative Works",
+    "zh": "衍生作品",
+    "ja": "二次的著作物",
+    "domain": "legal-contract"
+  },
+  {
+    "en": "grain procurement quotas",
+    "zh": "粮食征购定额",
+    "ja": "穀物調達割当",
+    "domain": "historical-monograph"
+  }
+]
