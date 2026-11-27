@@ -1,5 +1,7 @@
 # ZiyuanLingo
 
+**English** | [简体中文](./README.zh-CN.md) | [日本語](./README.ja.md)
+
 **Stateful AI Document Translation Platform for Academic, Legal & Technical Literature (EN / 中文 / 日本語)**
 
 - **Official Cloud Platform & Live Web Studio:** [https://ziyuanlingo.com](https://ziyuanlingo.com)
@@ -26,9 +28,9 @@ Generic chat translators drop footnotes, break two-column LaTeX equations, and d
 
 ---
 
-## What's New in `v2.0.0` Production GA
+## Key Features in `v2.0.0` Production GA
 
-1. **Live Cloud Translation Pipeline (`/app`):** Real-time trilingual translation across `Academic STEM`, `Legal Contract`, `Historical Monograph`, and `Technical Publishing` registers with instant 3-level invariant verification.
+1. **Live Cloud Translation Pipeline (`/app`):** Real-time trilingual translation across `Academic STEM` (LaTeX formula masking & DOI lock), `Legal Contract` (strict modal verb QA for `shall` / `may` / `must` & defined term lock), `Historical Monograph`, and `Technical Publishing` registers with instant 3-level invariant verification.
 2. **Structured Stream Bridge (`packages/structured-stream-bridge`):** Deterministic function-calling SSE unpacker supporting both Vertex AI Gemini `functionCall` parts (automatically filtering internal `thought` tokens) and chunked tool-call streams with truncation-resilient array recovery.
 3. **Three-Level Automated Invariant QA:**
    - **Level 1:** Paragraph count & footnote marker (`[^n]`) bijection check.
@@ -57,10 +59,14 @@ ziyuanlingo/
 │   ├── qa-engine.js                      # Cloud Studio v2.0 & 3-level invariant QA
 │   └── i18n.js                           # Trilingual UI localization (EN / ZH / JA)
 ├── LICENSE                               # Apache License 2.0
-└── README.md
+├── README.md                             # English documentation (default)
+├── README.zh-CN.md                       # Simplified Chinese documentation
+└── README.ja.md                          # Japanese documentation
 ```
 
-## Quick Verification
+## Quick Start
+
+Run the deterministic structured stream unpacker verification suite locally with Node.js (v18+):
 
 ```bash
 node packages/structured-stream-bridge/test-unpacker.mjs
@@ -74,3 +80,7 @@ node packages/structured-stream-bridge/test-unpacker.mjs
 - **Headquarters:** ZiyuanLingo — Shibuya Scramble Square, 2-24-12 Shibuya, Shibuya-ku, Tokyo 150-6139, Japan
 - **Contact:** [founder@ziyuanlingo.com](mailto:founder@ziyuanlingo.com)
 - **Website:** [https://ziyuanlingo.com](https://ziyuanlingo.com)
+
+## License
+
+Apache License 2.0 — see [LICENSE](./LICENSE) for details.

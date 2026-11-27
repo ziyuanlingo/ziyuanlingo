@@ -2,13 +2,15 @@ import fs from 'node:fs';
 import path from 'node:path';
 import crypto from 'node:crypto';
 import { execFileSync } from 'node:child_process';
+import { fileURLToPath } from 'node:url';
 
-const desktopDir = 'c:\\Users\\DELL\\Downloads\\yushe\\ziyuanlingo-desktop';
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+const desktopDir = process.env.ZIYUANLINGO_DESKTOP_DIR || __dirname;
 const stageDir = path.join(desktopDir, 'stage');
 const workflowsDir = path.join(stageDir, 'workflows');
 const themesDir = path.join(stageDir, 'assets', 'themes');
 const dictDir = path.join(stageDir, 'dictionaries');
-const outDownloadsDir = 'c:\\Users\\DELL\\Downloads\\yushe\\ziyuanlingo-web\\downloads';
+const outDownloadsDir = process.env.ZIYUANLINGO_OUT_DIR || path.resolve(desktopDir, '..', 'dist', 'downloads');
 
 fs.rmSync(stageDir, { recursive: true, force: true });
 fs.rmSync(outDownloadsDir, { recursive: true, force: true });
